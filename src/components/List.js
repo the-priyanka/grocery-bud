@@ -13,7 +13,11 @@ const List = (props) => {
               <button type="button" className="edit-btn">
                 <FaEdit />
               </button>
-              <button type="button" className="delete-btn">
+              <button
+                type="button"
+                onClick={() => props.removeItem(id)}
+                className="delete-btn"
+              >
                 <FaTrash />
               </button>
             </div>
